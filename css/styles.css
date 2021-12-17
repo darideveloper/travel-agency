@@ -1,3 +1,8 @@
+html {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -48,6 +53,11 @@ p.small {
   font-weight: bold;
 }
 
+html {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -100,6 +110,15 @@ p.small {
 .button:active {
   box-shadow: 0px 0px 30px black;
   font-weight: bold;
+}
+
+.orange {
+  width: 50px;
+  height: 100vh;
+  background-color: orange;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
 header {
@@ -110,7 +129,9 @@ header {
   margin: 30px auto;
   font-weight: 500;
   font-size: 18px;
-  max-width: 1200px;
+  width: 1200px;
+  height: 60px;
+  padding: 0;
 }
 header a {
   text-decoration: none;
@@ -129,14 +150,92 @@ header nav ul {
 }
 header nav ul li {
   list-style: none;
-  margin: 0 20px;
+  padding: 0 20px;
   transition-duration: 0.5s;
+}
+header nav ul li.back {
+  display: none;
 }
 header nav ul li:hover {
   transform: scale(1.2);
 }
 header .tel {
   opacity: 0.5;
+}
+header .icons {
+  display: none;
+}
+@media screen and (max-width: 1250px) {
+  header {
+    padding: 0 50px;
+    width: 100%;
+    margin: 30px 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  header nav {
+    position: fixed;
+    z-index: 1;
+    right: -220px;
+    top: 0;
+    width: 220px;
+    height: 150vh;
+    background-color: #ced2d3;
+    margin: 0;
+    padding: 0;
+    transition-duration: 0.5s;
+    box-shadow: 0px 0px 0px #564322;
+  }
+  header nav.active {
+    right: 0;
+    box-shadow: -2px -2px 20px #564322;
+  }
+  header nav ul {
+    margin: 0;
+    padding: 0;
+    display: block;
+  }
+  header nav ul li {
+    padding-top: 40px;
+    padding-left: 60px;
+    font-size: 28px;
+    display: block;
+    text-align: left;
+  }
+  header nav ul li.back {
+    display: block;
+    text-align: left;
+  }
+  header nav ul li.back a {
+    display: block;
+  }
+  header nav ul li.back a figure {
+    height: 25px;
+    width: 25px;
+  }
+  header .tel {
+    display: none;
+  }
+  header .icons {
+    display: flex;
+    height: 100%;
+    align-items: center;
+  }
+  header .icons .icon {
+    width: auto;
+    margin-left: 20px;
+  }
+  header .icons .icon.phone {
+    height: 80%;
+    transform: rotateZ(235deg);
+  }
+  header .icons .icon.burger {
+    height: 50%;
+  }
+  header .icons .icon figure {
+    height: 100%;
+    width: auto;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

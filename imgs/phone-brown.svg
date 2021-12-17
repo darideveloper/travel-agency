@@ -1,0 +1,8 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+	<title>phone-svg</title>
+	<style>
+		tspan { white-space:pre }
+		.s0 { fill: #564322 } 
+	</style>
+	<path id="Layer" fill-rule="evenodd" class="s0" d="m9.02 0l4.04 7.89l-2.72 1.34c-0.54 1.26 2.16 6.29 3.3 6.37c0.09-0.06 2.67-1.33 2.67-1.33l4.11 7.93c0 0-2.76 1.35-2.85 1.4c-7.86 3.59-19.1-18.26-11.38-22.28l2.84-1.32zm-1.94 3.1c-5.29 2.76 4.18 21.18 9.65 18.69l0.97-0.47l-2.27-4.38l-1.03 0.5c-3.16 1.55-8.26-8.22-5.05-9.94l1.01-0.5l-2.25-4.4l-1.02 0.5z" />
+</svg>

@@ -1,5 +1,13 @@
 @use 'base'
-    
+
+.orange
+    width: 50px
+    height: 100vh
+    background-color: orange
+    position: absolute
+    left: 0
+    top: 0
+
 header
     width: 100%
     display: flex 
@@ -8,7 +16,9 @@ header
     margin: 30px auto
     font-weight: 500
     font-size: 18px
-    max-width: base.$max-width
+    width: base.$max-width
+    height: 60px
+    padding: 0
 
     a
         text-decoration: none
@@ -23,13 +33,17 @@ header
             height: 100%
 
     nav
+
         ul
             display: flex
 
             li
                 list-style: none
-                margin: 0 20px
+                padding: 0 20px
                 transition-duration: 0.5s
+
+                &.back
+                    display: none
 
                 &:hover
                     transform: scale(1.2)
@@ -37,3 +51,76 @@ header
     .tel
         opacity: 0.5
 
+    .icons
+        display: none
+
+    @media screen and (max-width: 1250px)
+        padding: 0 50px
+        width: 100%
+        margin: 30px 0
+
+    @media screen and (max-width: 600px)
+        nav
+            position: fixed
+            z-index: 1
+            right: -220px
+            top: 0
+            width: 220px     
+            height: 150vh
+            background-color: base.$color_bg_2
+            margin: 0
+            padding: 0
+            transition-duration: 0.5s
+            box-shadow: 0px 0px 0px #564322
+
+            &.active
+                right: 0
+                box-shadow: -2px -2px 20px #564322
+
+            ul
+                margin: 0
+                padding: 0
+                display: block
+
+                li
+                    padding-top: 40px
+                    padding-left: 60px
+                    font-size: 28px
+                    display: block
+                    text-align: left
+
+                    &.back
+                        display: block
+                        text-align: left
+
+                        a
+                            display: block
+
+
+                            figure
+                                height: 25px
+                                width: 25px
+
+        .tel
+            display: none
+
+        .icons
+            display: flex
+            height: 100%
+            align-items: center
+
+            .icon
+                width: auto
+                margin-left: 20px
+
+                &.phone
+                    height: 80% 
+                    transform: rotateZ(235deg)
+
+                &.burger
+                    height: 50% 
+
+                figure
+                    height: 100%
+                    width: auto
+        
