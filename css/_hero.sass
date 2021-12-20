@@ -1,0 +1,78 @@
+.hero
+    border: 1px solid red
+
+    figure.main-image
+        width: 100%
+        height: 350px
+
+    .grid
+        width: base.$max-width
+        margin: 0 auto
+        margin-top: 50px
+        display: grid
+        grid-template-columns: 4fr 3fr 1fr
+        border: 1px solid red
+
+        .hero-title
+
+            h1
+                font-size: 160px
+                color: base.$color_bg_1
+                -webkit-text-stroke-width: 3px
+                -webkit-text-stroke-color: base.$color_d
+                margin: 0
+                padding: 0
+                
+                span
+                    margin-left: 10px
+
+            p
+                margin: 0
+                padding: 0
+                text-align: left
+                display: block
+                margin-left: 500px
+                margin-top: -38px
+                font-size: 25px
+
+        .wrapper-cta
+            display: flex
+            align-items: center
+            justify-content: center
+
+            .cta
+                text-align: center
+
+                a
+                    text-decoration: none
+                    color: base.$color_d
+                    background-color: base.$color_b
+                    border-radius: 30px
+                    padding: 10px 25px
+                    font-weight: 600
+
+                .icon
+                    width: 100%
+                    height: 30px
+                    opacity: 0.4
+                    display: flex
+                    align-items: center
+                    justify-content: flex-end
+                    
+
+                    figure
+                        margin-right: -25px
+                        width: 30px
+                        height: auto
+
+        .arrow
+            display: flex
+            align-items: center
+            justify-content: center
+            width: 10px
+            height: 100%
+            opacity: 0.5
+
+            figure
+                width: 100%
+                height: 40%
