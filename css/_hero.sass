@@ -3,13 +3,21 @@
     figure.main-image
         width: 100%
         height: 350px
+        display: flex
+        align-items: center
+        justify-content: center
+        overflow: hidden
+
+        img
+            width: auto
+            height: 100%
 
     .grid
         width: base.$max-width
         margin: 0 auto
         margin-top: 50px
         display: grid
-        grid-template-columns: 4fr 3fr 1fr
+        grid-template-columns: 4fr 3fr 0.2fr
 
         .hero-title
 
