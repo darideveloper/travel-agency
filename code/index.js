@@ -19,3 +19,8 @@ menu.addEventListener ("click", function (e) {
         toggle_menu ()
     }
 })
+
+
+const circleType = new CircleType(document.querySelector (".cta > p.rounded"));
+circleType.dir(-1)
+circleType.radius(80);
