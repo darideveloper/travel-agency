@@ -366,18 +366,19 @@ header .icons {
 
 .about-us {
   width: 1200px;
-  margin: 250px auto;
+  margin: 0 auto;
+  margin-top: 250px;
 }
 .about-us .title h2 {
   width: 100%;
   text-align: center;
 }
 .about-us .title p {
-  width: calc(100% - 590px);
+  width: calc(100% - 605px);
   text-align: left;
   margin-top: -20px;
   font-size: 22px;
-  margin-left: 590px;
+  margin-left: 605px;
 }
 .about-us .grid {
   display: grid;
@@ -416,11 +417,12 @@ header .icons {
   .about-us {
     padding: 0 50px;
     width: calc(100% - 100px);
-    margin: 250px 0;
+    margin: 0;
+    margin-top: 250px;
   }
   .about-us .title p {
     width: auto;
-    margin-left: 49%;
+    margin-left: 51%;
   }
   .about-us .grid {
     display: block;
@@ -455,6 +457,7 @@ header .icons {
   }
   .about-us .grid .gallery figure {
     margin: 10px;
+    height: 450px;
   }
 }
 
