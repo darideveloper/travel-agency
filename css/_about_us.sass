@@ -46,7 +46,49 @@
 
                 &:nth-child(1)
                     grid-column: 1 / 4
-                    
+    
+    @media screen and (max-width: 1200px)
+        padding: 0 50px
+        width: calc(100% - 100px)
+        margin: 250px 0
 
+        .title
+            p
+                width: auto
+                margin-left: 49%
+
+        .grid
+            display: block
+
+            .gallery
+                margin-top: 60px
+                display: flex
+                align-items: center
+                justify-content: flex-start
+                overflow: hidden
+                overflow-x: scroll
+                width: 100%
+                column-gap: 0
+
+                figure
+                    width: 80%
+                    min-width: 80%
+                    height: 550px
+                    margin: 20px
+                    overflow: hidden
+
+                    img
+                        height: 100%
+                        width: auto
+
+    @media screen and (max-width: 768px)
+        .grid
+            .gallery
+                width: calc(100% + 100px)
+                margin-left: -50px
+                margin-right: -50px
+                
+                figure
+                    margin: 10px
 
 

@@ -289,10 +289,10 @@ header .icons {
     padding: 0;
     width: 100%;
   }
-  .hero .grid .hero-title {
+  .hero .grid .title {
     text-align: center;
   }
-  .hero .grid .hero-title p {
+  .hero .grid .title p {
     margin-left: 0;
     text-align: right;
     width: 80%;
@@ -351,7 +351,7 @@ header .icons {
     width: calc(100% - 202px);
     height: 1140px;
   }
-  .hero .grid .hero-title h1 {
+  .hero .grid .title h1 {
     writing-mode: vertical-lr;
     text-orientation: upright;
     letter-spacing: -35px;
@@ -359,7 +359,7 @@ header .icons {
     right: 0;
     top: 80px;
   }
-  .hero .grid .hero-title > p {
+  .hero .grid .title > p {
     display: none;
   }
 }
@@ -411,6 +411,51 @@ header .icons {
 }
 .about-us .grid .gallery figure:nth-child(1) {
   grid-column: 1/4;
+}
+@media screen and (max-width: 1200px) {
+  .about-us {
+    padding: 0 50px;
+    width: calc(100% - 100px);
+    margin: 250px 0;
+  }
+  .about-us .title p {
+    width: auto;
+    margin-left: 49%;
+  }
+  .about-us .grid {
+    display: block;
+  }
+  .about-us .grid .gallery {
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: hidden;
+    overflow-x: scroll;
+    width: 100%;
+    column-gap: 0;
+  }
+  .about-us .grid .gallery figure {
+    width: 80%;
+    min-width: 80%;
+    height: 550px;
+    margin: 20px;
+    overflow: hidden;
+  }
+  .about-us .grid .gallery figure img {
+    height: 100%;
+    width: auto;
+  }
+}
+@media screen and (max-width: 768px) {
+  .about-us .grid .gallery {
+    width: calc(100% + 100px);
+    margin-left: -50px;
+    margin-right: -50px;
+  }
+  .about-us .grid .gallery figure {
+    margin: 10px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
