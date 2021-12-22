@@ -1,20 +1,11 @@
-.orange
-    width: 50px
-    height: 100vh
-    background-color: orange
-    position: absolute
-    left: 0
-    top: 0
-
 header
     display: flex 
     align-items: center
     justify-content: space-between
-    margin: 30px auto
-    margin-bottom: 100px
+    margin: 30px auto !important
+    margin-bottom: 100px !important
     font-weight: 500
     font-size: 18px
-    width: base.$max-width
     height: 60px
     padding: 0
 
@@ -54,9 +45,7 @@ header
         display: none
 
     @media screen and (max-width: 1250px)
-        padding: 0 50px
-        width: calc(100% - 100px)
-        margin: 30px 0
+        margin: 30px 0 !important
 
     @media screen and (max-width: 680px)
         nav

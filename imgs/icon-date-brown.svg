@@ -1,0 +1,8 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+	<title>icon-date-svg</title>
+	<style>
+		tspan { white-space:pre }
+		.s0 { fill: #564322 } 
+	</style>
+	<path id="Layer" fill-rule="evenodd" class="s0" d="m24 1v13.39c0 2.39-6.65 9.61-9.81 9.61h-14.19v-23h24zm-22 6v15h11.36c4.16 0 2.64-6 2.64-6c0 0 6 1.65 6-2.46v-6.54l-20 0zm6 12h-4v-4h4v4zm6 0h-4v-4h4v4zm-6-6h-4v-4h4v4zm6 0h-4v-4h4v4zm6 0h-4v-4h4v4z" />
+</svg>

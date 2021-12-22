@@ -17,12 +17,40 @@ body
     font-family: 'Dosis', sans-serif
     background-color: $color_bg_1
     color: $color_d
+    width: 100vw
+    // background: linear-gradient(180deg, $color_bg_1 0% 25%, $color_bg_2 25% 50%, $color_bg_1 50% 75%)
+    // backdrop-filter: blur(10px)
 
 h2
     font-size: 80px
     font-weight: 400
     margin: 0
     padding: 0
+    width: 100%
+    text-align: center
+
+.fixed-width
+    width: $max-width
+    margin: 0 auto
+
+    @media screen and (max-width: 1250px)
+        padding: 0 50px
+        width: calc(100% - 100px)
+        margin: 0
+
+.section
+    margin-top: 250px
+
+h2 + p
+    width: calc(100% - 605px)
+    text-align: left
+    margin-top: -20px
+    font-size: 22px
+    margin-left: 605px
+
+    @media screen and (max-width: 1200px)
+        width: auto
+        margin-left: 51%
 
 .cursive
     font-family: 'Kalam', cursive

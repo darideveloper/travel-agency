@@ -1,0 +1,8 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+	<title>icon-country-svg</title>
+	<style>
+		tspan { white-space:pre }
+		.s0 { fill: #564322 } 
+	</style>
+	<path id="Layer" fill-rule="evenodd" class="s0" d="m4 24h-2v-24h2v24zm14.25-19.96c-3.36 0-3.44-2.9-7.34-2.9c-2.11 0-4.08 0.98-4.91 1.69v12.09c1.18-0.82 2.98-1.68 4.92-1.68c3.68 0 4.2 2.75 7.48 2.75c2.12 0 3.59-1.36 3.59-1.36v-12.03c0 0-1.62 1.43-3.75 1.43z" />
+</svg>

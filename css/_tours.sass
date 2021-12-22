@@ -1,0 +1,135 @@
+.tours
+
+    .cards
+        display: grid
+        align-items: center
+        justify-content: center
+        grid-template-columns: repeat(3, 1fr)
+        column-gap: 60px
+        margin-top: 60px
+
+        .card
+
+            // border: 2px solid base.$color_d
+            border-radius: 20px
+            background-color: white
+            position: relative
+            box-shadow: 0px 0px 0px 3px base.$color_d
+            
+            figure
+                width: 100%
+                margin: 0 auto
+                // margin-top: 3px
+                height: 200px 
+                border-top-right-radius: 19px
+                border-top-left-radius: 19px
+                overflow: hidden
+
+            h3
+                width: 100%
+                margin: 0 auto
+                text-align: center
+                background-color: base.$color_c
+                margin-bottom: 25px
+                padding: 10px 0
+
+            .details 
+
+                .detail
+
+                    display: flex 
+                    align-items: center
+                    justify-content: flex-start
+                    width: 70%
+                    margin: 0 auto
+                    margin-top: 10px 
+
+                    p
+                        margin: 0
+
+                    .icon
+                        width: 20px
+                        min-width: 20px
+                        height: 20px
+                        margin-right: 10px
+                        display: inline-block
+                        background-repeat: no-repeat
+                        background-size: 20px 20px
+
+                    &.date .icon
+                        background-image: url("../imgs/icon-date-brown.svg")
+                    
+                    &.country .icon
+                        background-image: url("../imgs/icon-country-brown.svg")
+
+                    &.location .icon
+                        background-image: url("../imgs/icon-location-brown.svg")
+
+                    &.excursion .icon
+                        background-image: url("../imgs/icon-excursion-brown.svg")
+
+                    &.bus .icon
+                        background-image: url("../imgs/icon-bus.svg")
+
+                    &.plane .icon
+                        background-image: url("../imgs/icon-plane.svg")
+                            
+            .cta
+                width: 100%
+                margin: 0 auto
+
+                span.price 
+                    width: 100%
+                    display: block
+                    text-align: center
+                    font-size: 20px
+                    padding: 20px 0
+                    font-weight: 600
+
+                a
+                    display: block
+                    width: 100%
+                    background-color: base.$color_d
+                    color: white
+                    text-decoration: none
+                    font-size: 25px
+                    text-align: center
+                    padding: 6px 0
+                    border-bottom-left-radius: 17px
+                    border-bottom-right-radius: 17px
+
+        @media screen and (max-width: 1250px)
+            column-gap: 30px
+
+            .card
+                height: 580px
+                min-height: 580px
+
+                .cta
+                    position: absolute
+                    bottom: 0
+
+        @media screen and (max-width: 1050px)
+
+            .card
+                height: 630px
+                min-height: 630px
+
+        @media screen and (max-width: 900px)
+            grid-template-columns: 1fr
+            row-gap: 50px
+            column-gap: 0
+
+            .card
+                width: 390px
+                margin: 0 auto
+                height: auto
+                min-height: auto
+
+                .cta
+                    position: initial
+
+        @media screen and (max-width: 450px)
+
+            .card
+                width: 300px
