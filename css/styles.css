@@ -45,7 +45,7 @@ h2 + p {
   font-size: 22px;
   margin-left: 605px;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1250px) {
   h2 + p {
     width: auto;
     margin-left: 51%;
@@ -140,6 +140,7 @@ header .icons {
 @media screen and (max-width: 1250px) {
   header {
     margin: 30px 0 !important;
+    margin-bottom: 100px !important;
   }
 }
 @media screen and (max-width: 680px) {
@@ -665,7 +666,81 @@ header .icons {
   width: 5vw;
   text-align: center;
   margin: 0 auto;
-  margin-top: 160px;
+  margin-top: 6vw;
+}
+@media screen and (max-width: 2000px) {
+  .spain .cta {
+    top: 50vw;
+  }
+}
+@media screen and (max-width: 1700px) {
+  .spain .images .arrow {
+    margin-left: 50%;
+  }
+}
+@media screen and (max-width: 1500px) {
+  .spain .cta {
+    top: 52vw;
+  }
+  .spain .cta .arrow {
+    left: -3vw;
+    width: 40px;
+  }
+  .spain .cta p {
+    font-size: 30px;
+  }
+  .spain .cta a {
+    font-size: 35px;
+    border: 6px solid #A1C2C3;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .spain .images .arrow, .spain .images .details {
+    display: none;
+  }
+  .spain .images .country {
+    position: initial;
+    left: 0;
+    width: 480px;
+    left: initial;
+    margin: 0 auto;
+  }
+  .spain .images .bg {
+    top: -220px;
+    height: 1040px;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .spain .images .bg img {
+    width: auto;
+    height: 100%;
+  }
+  .spain .cta {
+    width: 100%;
+    position: initial;
+  }
+  .spain .cta .arrow, .spain .cta .icon {
+    display: none;
+  }
+  .spain .cta a {
+    width: 60px;
+    padding: 15px 70px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .spain .images .country {
+    width: 80%;
+  }
+  .spain .images .bg {
+    display: none;
+  }
+}
+@media screen and (max-width: 400px) {
+  .spain .cta p {
+    font-size: 20px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
