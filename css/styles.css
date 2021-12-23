@@ -21,6 +21,17 @@ h2 {
   width: 100%;
   text-align: center;
 }
+@media screen and (max-width: 768px) {
+  h2 {
+    font-size: 54px;
+    margin-bottom: 8px;
+  }
+}
+@media screen and (max-width: 480px) {
+  h2 {
+    font-size: 39px;
+  }
+}
 
 .fixed-width {
   width: 1200px;
@@ -783,6 +794,65 @@ header .icons {
   left: -15px;
   font-size: 45px;
   opacity: 0.5;
+}
+@media screen and (max-width: 1200px) {
+  .choose-us {
+    margin-top: 180px;
+  }
+  .choose-us .bubbles {
+    justify-content: space-around;
+  }
+}
+@media screen and (max-width: 768px) {
+  .choose-us .bubbles {
+    justify-content: space-between;
+    margin-top: 150px;
+  }
+  .choose-us .bubbles .bubble:nth-child(2) {
+    margin-top: 0;
+  }
+  .choose-us .bubbles .bubble .content {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  .choose-us .bubbles .bubble .content p {
+    position: absolute;
+    bottom: -70px;
+    left: 0;
+    font-size: 22px;
+  }
+  .choose-us .bubbles .bubble .content .icon {
+    width: auto;
+    height: 40%;
+  }
+  .choose-us .bubbles .bubble span {
+    top: -80px;
+    left: 0;
+    font-size: 55px;
+    width: 100%;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 600px) {
+  .choose-us .bubbles {
+    margin-top: 100px;
+  }
+  .choose-us .bubbles .bubble {
+    width: 20vw;
+    height: 20vw;
+  }
+  .choose-us .bubbles .bubble .content p {
+    font-size: 16px;
+  }
+  .choose-us .bubbles .bubble span {
+    font-size: 35px;
+    top: -60px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
