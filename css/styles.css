@@ -857,7 +857,7 @@ header .icons {
 
 .experience .slider {
   width: 100%;
-  height: 450px;
+  height: 35vw;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -907,6 +907,9 @@ header .icons {
   font-size: 22px;
   font-weight: 500;
 }
+.experience .slider .extra {
+  display: none;
+}
 .experience .buttons {
   display: flex;
   align-items: center;
@@ -931,6 +934,39 @@ header .icons {
   width: 60%;
   height: 60%;
   opacity: 0.6;
+}
+@media screen and (max-width: 1200px) {
+  .experience .slider {
+    width: auto;
+    height: auto;
+    overflow-x: scroll;
+    justify-content: flex-start;
+    padding: 0 50px;
+    width: calc(100% - 100px);
+  }
+  .experience .slider .bg {
+    display: none;
+  }
+  .experience .slider .image {
+    width: 70vw;
+    min-width: 70vw;
+    height: 52.5vw;
+    min-height: 52.5vw;
+    margin: 20px;
+  }
+  .experience .slider .center {
+    border: none;
+    padding: 0;
+  }
+  .experience .slider .center p {
+    display: none;
+  }
+  .experience .slider .extra {
+    display: block;
+  }
+  .experience .buttons {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
