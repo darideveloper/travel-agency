@@ -3,6 +3,7 @@ var menu = document.querySelector ("header > nav")
 var active_menu = false
 var hero_image = document.querySelector(".hero > figure.main-image > img")
 var gallery_images_elems = document.querySelectorAll(".gallery > figure > img")
+var spain_image = document.querySelector (".spain > .images > figure.bg > img")
 
 function toggle_menu () {
     menu.classList.toggle("active")
@@ -32,7 +33,7 @@ circleType.radius(80);
 // Hero images list
 const hero_images = {
     "large": "./imgs/hero-large.png",
-    "mediaum": "./imgs/hero-medium.png",
+    "medium": "./imgs/hero-medium.png",
     "small": "./imgs/hero-small.png",
     "mobile": "./imgs/hero-mobile.png"
 }
@@ -47,7 +48,7 @@ function set_hero_image () {
     } else if (window.matchMedia("(max-width: 770px)").matches) {
         macth_image = hero_images["small"]
     } else if (window.matchMedia("(max-width: 1440px)").matches) {
-        macth_image = hero_images["mediaum"]
+        macth_image = hero_images["medium"]
     } else {
         macth_image = hero_images["large"]
     }
@@ -106,12 +107,43 @@ function set_gallery_images () {
     }
 }
 
+// Spain image list
+const spain_images = {
+    "large": "./imgs/spain-bg-large.png",
+    "medium": "./imgs/spain-bg-medium.png",
+    "small": "./imgs/spain-bg-small.png",
+    "mobile": "./imgs/spain-bg-mobile.png"
+}
+var current_spain_image = ""
+
+function set_spain_image () {
+
+    // correct image
+    let macth_image = ""
+    if (window.matchMedia("(max-width: 768px)").matches) {
+        macth_image = spain_images["mobile"]
+    } else if (window.matchMedia("(max-width: 1200px)").matches) {
+        macth_image = spain_images["small"]
+    } else if (window.matchMedia("(max-width: 1440px)").matches) {
+        macth_image = spain_images["medium"]
+    } else {
+        macth_image = spain_images["large"]
+    }
+
+    if (current_spain_image != macth_image) {
+        current_spain_image = macth_image
+        spain_image.setAttribute ("src", current_spain_image)
+    }
+}
+
 // Set image when page load
 set_hero_image ()
 set_gallery_images ()
+set_spain_image ()
 
 // Update hero image
 window.addEventListener('resize', function (e) {
     set_hero_image ()
     set_gallery_images ()
+    set_spain_image ()
 });

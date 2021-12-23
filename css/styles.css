@@ -629,6 +629,7 @@ header .icons {
   position: absolute;
   top: -290px;
   z-index: -1;
+  width: 100%;
 }
 .spain .cta {
   position: absolute;
