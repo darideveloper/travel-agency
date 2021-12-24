@@ -4,7 +4,7 @@ var active_menu = false
 
 var hero_image = document.querySelector(".hero > figure.main-image > img")
 
-var gallery_about_images_elems = document.querySelectorAll(".about-us .gallery > figure > img")
+var gallery_about_images_elems = document.querySelectorAll(".about-us .gallery figure img")
 
 var spain_image = document.querySelector (".spain > .images > figure.bg > img")
 
@@ -16,6 +16,7 @@ var experience_next_img = document.querySelector (".experience .gallery .image:n
 var experience_center_p = document.querySelector (".experience .gallery .image:nth-child(3) p")
 var experience_bg = document.querySelector (".experience .gallery")
 var experience_bg_img = document.querySelector (".experience .gallery figure.bg img")
+var experience_galery = document.querySelector (".experience .wrapper-gallery")
 
 function sleep(seg) {
     return new Promise(resolve => setTimeout(resolve, seg*1000));
@@ -180,6 +181,8 @@ var experience_index = 1
 
 async function update_experience_images () {
 
+    experience_galery.classList.remove ("fixed-width")
+
     // Calculate next and last image
     let last_index
     let next_index
@@ -216,7 +219,8 @@ async function update_experience_images () {
 
     // Set mobile images
     if (window.matchMedia("(max-width: 1200px)").matches) {
-        let all_images = document.querySelectorAll (".gallery .image img")
+        experience_galery.classList.add ("fixed-width")
+        let all_images = document.querySelectorAll (".experience .gallery .image img")
         for (image_index in Array.from (all_images)) {
             console.log (image_index)
             let image = all_images[image_index]

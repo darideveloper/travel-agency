@@ -1,0 +1,15 @@
+.wrapper-gallery
+    @media screen and (max-width: 1200px)
+        @include fixed-width
+        .gallery
+            .image
+                margin: 20px
+
+    @media screen and (max-width: 768px)
+        .gallery
+            margin-left: -50px
+            margin-right: -50px
+            width: calc(100% + 100px) !important
+
+            .image
+                margin: 10px

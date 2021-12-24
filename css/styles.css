@@ -46,7 +46,7 @@ h2 {
 }
 
 .section {
-  margin-top: 250px;
+  margin-top: 250px !important;
 }
 
 h2 + p {
@@ -103,6 +103,35 @@ p.small {
 
 .hide {
   display: none !important;
+}
+
+@media screen and (max-width: 1200px) {
+  .wrapper-gallery {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 1200px) and (max-width: 1250px) {
+  .wrapper-gallery {
+    padding: 0 50px;
+    width: calc(100% - 100px);
+    margin: 0;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .wrapper-gallery .gallery .image {
+    margin: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .wrapper-gallery .gallery {
+    margin-left: -50px;
+    margin-right: -50px;
+    width: calc(100% + 100px) !important;
+  }
+  .wrapper-gallery .gallery .image {
+    margin: 10px;
+  }
 }
 
 header {
@@ -423,7 +452,7 @@ header .icons {
   width: 100%;
   height: 170px;
 }
-.about-us .grid .gallery figure:nth-child(1) {
+.about-us .grid .gallery .image:nth-child(1) {
   grid-column: 1/4;
 }
 @media screen and (max-width: 1200px) {
@@ -440,26 +469,23 @@ header .icons {
     width: 100%;
     column-gap: 0;
   }
-  .about-us .grid .gallery figure {
+  .about-us .grid .gallery .image {
     width: 80%;
     min-width: 80%;
     height: 550px;
-    margin: 20px;
+  }
+  .about-us .grid .gallery .image figure {
+    width: 100%;
+    height: 100%;
     overflow: hidden;
   }
-  .about-us .grid .gallery figure img {
+  .about-us .grid .gallery .image figure img {
     height: 100%;
     width: auto;
   }
 }
 @media screen and (max-width: 768px) {
-  .about-us .grid .gallery {
-    width: calc(100% + 100px);
-    margin-left: -50px;
-    margin-right: -50px;
-  }
   .about-us .grid .gallery figure {
-    margin: 10px;
     height: 450px;
   }
 }
@@ -855,7 +881,7 @@ header .icons {
   }
 }
 
-.experience .gallery {
+.experience .wrapper-gallery .gallery {
   width: 100%;
   height: 35vw;
   display: flex;
@@ -865,10 +891,10 @@ header .icons {
   margin-top: 60px;
   transition-duration: 1s;
 }
-.experience .gallery.animation {
+.experience .wrapper-gallery .gallery.animation {
   opacity: 0;
 }
-.experience .gallery .bg {
+.experience .wrapper-gallery .gallery .bg {
   opacity: 0.2;
   filter: blur(2px);
   position: absolute;
@@ -882,22 +908,22 @@ header .icons {
   justify-content: center;
   overflow: hidden;
 }
-.experience .gallery .bg img {
+.experience .wrapper-gallery .gallery .bg img {
   height: auto;
   width: 100%;
 }
-.experience .gallery .image {
+.experience .wrapper-gallery .gallery .image {
   width: 16vw;
   height: 12vw;
 }
-.experience .gallery .image img {
+.experience .wrapper-gallery .gallery .image img {
   opacity: 0.75;
 }
-.experience .gallery .image figure {
+.experience .wrapper-gallery .gallery .image figure {
   width: 100%;
   height: 100%;
 }
-.experience .gallery .image p {
+.experience .wrapper-gallery .gallery .image p {
   margin: 0;
   width: 100%;
   text-align: center;
@@ -906,16 +932,16 @@ header .icons {
   font-weight: 500;
   display: none;
 }
-.experience .gallery .image.active {
+.experience .wrapper-gallery .gallery .image.active {
   width: 25vw;
   height: 18.75vw;
   border: 2px solid rgba(86, 67, 34, 0.3);
   padding: 35px;
 }
-.experience .gallery .image.active p {
+.experience .wrapper-gallery .gallery .image.active p {
   display: block;
 }
-.experience .gallery .image.extra {
+.experience .wrapper-gallery .gallery .image.extra {
   display: none;
 }
 .experience .buttons {
@@ -944,32 +970,30 @@ header .icons {
   opacity: 0.6;
 }
 @media screen and (max-width: 1200px) {
-  .experience .gallery {
-    width: auto;
+  .experience .wrapper-gallery .gallery {
+    width: 100%;
     height: auto;
     overflow-x: scroll;
     justify-content: flex-start;
-    padding: 0 50px;
-    width: calc(100% - 100px);
+    padding: 0;
   }
-  .experience .gallery .bg {
+  .experience .wrapper-gallery .gallery .bg {
     display: none;
   }
-  .experience .gallery .image {
+  .experience .wrapper-gallery .gallery .image {
     width: 70vw;
     min-width: 70vw;
     height: 52.5vw;
     min-height: 52.5vw;
-    margin: 20px;
   }
-  .experience .gallery .image.extra {
+  .experience .wrapper-gallery .gallery .image.extra {
     display: block;
   }
-  .experience .gallery .image.active {
+  .experience .wrapper-gallery .gallery .image.active {
     border: none;
     padding: 0;
   }
-  .experience .gallery .image.active p {
+  .experience .wrapper-gallery .gallery .image.active p {
     display: none;
   }
   .experience .buttons {
