@@ -4,17 +4,7 @@ $color_c: #E7E1C1
 $color_d: #564322
 $color_bg_1: #e8e1cf
 $color_bg_2: #ced2d3
-$max-width: 1200px
-
-
-@mixin fixed-width ()
-    width: $max-width
-    margin: 0 auto
-
-    @media screen and (max-width: 1250px)
-        padding: 0 50px
-        width: calc(100% - 100px)
-        margin: 0
+$max-width: 1200px    
 
 html
     margin: 0
@@ -48,11 +38,17 @@ h2
 
 
 .fixed-width
-    @include fixed-width
+    width: $max-width
+    margin: 0 auto
+
+    @media screen and (max-width: 1250px)
+        padding: 0 50px
+        width: calc(100% - 100px)
+        margin: 0
 
 
 .section
-    margin-top: 250px !important
+    margin-top: 250px
 
 h2 + p
     width: calc(100% - 605px)

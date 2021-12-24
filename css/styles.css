@@ -46,7 +46,7 @@ h2 {
 }
 
 .section {
-  margin-top: 250px !important;
+  margin-top: 250px;
 }
 
 h2 + p {
@@ -108,19 +108,15 @@ p.small {
 @media screen and (max-width: 1200px) {
   .wrapper-gallery {
     width: 1200px;
-    margin: 0 auto;
+  }
+  .wrapper-gallery .gallery .image {
+    margin: 20px;
   }
 }
-@media screen and (max-width: 1200px) and (max-width: 1250px) {
+@media screen and (max-width: 1250px) {
   .wrapper-gallery {
     padding: 0 50px;
     width: calc(100% - 100px);
-    margin: 0;
-  }
-}
-@media screen and (max-width: 1200px) {
-  .wrapper-gallery .gallery .image {
-    margin: 20px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -823,7 +819,7 @@ header .icons {
 }
 @media screen and (max-width: 1200px) {
   .choose-us {
-    margin-top: 180px;
+    margin-top: 250px;
   }
   .choose-us .bubbles {
     justify-content: space-around;
