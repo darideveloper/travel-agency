@@ -855,7 +855,7 @@ header .icons {
   }
 }
 
-.experience .slider {
+.experience .gallery {
   width: 100%;
   height: 35vw;
   display: flex;
@@ -863,8 +863,12 @@ header .icons {
   justify-content: space-around;
   position: relative;
   margin-top: 60px;
+  transition-duration: 1s;
 }
-.experience .slider .bg {
+.experience .gallery.animation {
+  opacity: 0;
+}
+.experience .gallery .bg {
   opacity: 0.2;
   filter: blur(2px);
   position: absolute;
@@ -878,36 +882,40 @@ header .icons {
   justify-content: center;
   overflow: hidden;
 }
-.experience .slider .bg img {
+.experience .gallery .bg img {
   height: auto;
   width: 100%;
 }
-.experience .slider .image img {
-  opacity: 0.75;
-}
-.experience .slider .small {
+.experience .gallery .image {
   width: 16vw;
   height: 12vw;
 }
-.experience .slider .center {
-  width: 25vw;
-  height: 18.75vw;
-  border: 2px solid rgba(86, 67, 34, 0.3);
-  padding: 35px;
+.experience .gallery .image img {
+  opacity: 0.75;
 }
-.experience .slider .center figure {
+.experience .gallery .image figure {
   width: 100%;
   height: 100%;
 }
-.experience .slider .center p {
+.experience .gallery .image p {
   margin: 0;
   width: 100%;
   text-align: center;
   line-height: 35px;
   font-size: 22px;
   font-weight: 500;
+  display: none;
 }
-.experience .slider .extra {
+.experience .gallery .image.active {
+  width: 25vw;
+  height: 18.75vw;
+  border: 2px solid rgba(86, 67, 34, 0.3);
+  padding: 35px;
+}
+.experience .gallery .image.active p {
+  display: block;
+}
+.experience .gallery .image.extra {
   display: none;
 }
 .experience .buttons {
@@ -936,7 +944,7 @@ header .icons {
   opacity: 0.6;
 }
 @media screen and (max-width: 1200px) {
-  .experience .slider {
+  .experience .gallery {
     width: auto;
     height: auto;
     overflow-x: scroll;
@@ -944,25 +952,25 @@ header .icons {
     padding: 0 50px;
     width: calc(100% - 100px);
   }
-  .experience .slider .bg {
+  .experience .gallery .bg {
     display: none;
   }
-  .experience .slider .image {
+  .experience .gallery .image {
     width: 70vw;
     min-width: 70vw;
     height: 52.5vw;
     min-height: 52.5vw;
     margin: 20px;
   }
-  .experience .slider .center {
+  .experience .gallery .image.extra {
+    display: block;
+  }
+  .experience .gallery .image.active {
     border: none;
     padding: 0;
   }
-  .experience .slider .center p {
+  .experience .gallery .image.active p {
     display: none;
-  }
-  .experience .slider .extra {
-    display: block;
   }
   .experience .buttons {
     display: none;
