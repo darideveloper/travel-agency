@@ -68,14 +68,14 @@ h2 + p {
   font-weight: bold;
 }
 
-figure {
+.wrapper-img {
   margin: 0;
   padding: 0;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-figure img {
+.wrapper-img img {
   margin: 0;
   padding: 0;
   width: 100%;
@@ -149,7 +149,7 @@ header .logo {
   width: 50px;
   height: 50px;
 }
-header .logo figure {
+header .logo .wrapper-img {
   width: 100%;
   height: 100%;
 }
@@ -216,7 +216,7 @@ header .icons {
   header nav ul li.back a {
     display: block;
   }
-  header nav ul li.back a figure {
+  header nav ul li.back a .wrapper-img {
     height: 25px;
     width: 25px;
   }
@@ -239,13 +239,13 @@ header .icons {
   header .icons .icon.burger {
     height: 50%;
   }
-  header .icons .icon figure {
+  header .icons .icon .wrapper-img {
     height: 100%;
     width: auto;
   }
 }
 
-.hero figure.main-image {
+.hero .wrapper-img.main-image {
   width: 100%;
   height: 350px;
   display: flex;
@@ -253,7 +253,7 @@ header .icons {
   justify-content: center;
   overflow: hidden;
 }
-.hero figure.main-image img {
+.hero .wrapper-img.main-image img {
   width: auto;
   height: 100%;
 }
@@ -312,7 +312,7 @@ header .icons {
   align-items: center;
   justify-content: flex-end;
 }
-.hero .grid .wrapper-cta .cta .icon figure {
+.hero .grid .wrapper-cta .cta .icon .wrapper-img {
   margin-right: -25px;
   width: 30px;
   height: auto;
@@ -325,7 +325,7 @@ header .icons {
   height: 100%;
   opacity: 0.5;
 }
-.hero .grid .arrow figure {
+.hero .grid .arrow .wrapper-img {
   width: 100%;
   height: 40%;
 }
@@ -401,7 +401,7 @@ header .icons {
   }
 }
 @media screen and (max-width: 680px) {
-  .hero figure.main-image {
+  .hero .wrapper-img.main-image {
     width: calc(100% - 202px);
     height: 1140px;
   }
@@ -444,7 +444,7 @@ header .icons {
   column-gap: 20px;
   row-gap: 20px;
 }
-.about-us .grid .gallery figure {
+.about-us .grid .gallery .wrapper-img {
   width: 100%;
   height: 170px;
 }
@@ -470,18 +470,18 @@ header .icons {
     min-width: 80%;
     height: 550px;
   }
-  .about-us .grid .gallery .image figure {
+  .about-us .grid .gallery .image .wrapper-img {
     width: 100%;
     height: 100%;
     overflow: hidden;
   }
-  .about-us .grid .gallery .image figure img {
+  .about-us .grid .gallery .image .wrapper-img img {
     height: 100%;
     width: auto;
   }
 }
 @media screen and (max-width: 768px) {
-  .about-us .grid .gallery figure {
+  .about-us .grid .gallery .wrapper-img {
     height: 450px;
   }
 }
@@ -502,7 +502,7 @@ header .icons {
   width: 100%;
   min-width: 100%;
 }
-.tours .cards .card figure {
+.tours .cards .card .wrapper-img {
   width: 100%;
   min-width: 100%;
   height: 200px;
@@ -511,7 +511,7 @@ header .icons {
   border-top-left-radius: 19px;
   overflow: hidden;
 }
-.tours .cards .card figure img {
+.tours .cards .card .wrapper-img img {
   height: 100%;
   width: auto;
 }
@@ -915,7 +915,7 @@ header .icons {
 .experience .wrapper-gallery .gallery .image img {
   opacity: 0.75;
 }
-.experience .wrapper-gallery .gallery .image figure {
+.experience .wrapper-gallery .gallery .image .wrapper-img {
   width: 100%;
   height: 100%;
 }
@@ -960,7 +960,7 @@ header .icons {
 .experience .buttons .arrow.right {
   transform: rotateZ(180deg);
 }
-.experience .buttons .arrow figure {
+.experience .buttons .arrow .wrapper-img {
   width: 60%;
   height: 60%;
   opacity: 0.6;

@@ -1,4 +1,4 @@
-var gallery_about_images_elems = document.querySelectorAll(".about-us .gallery figure img")
+var gallery_about_images_elems = document.querySelectorAll(".about-us .gallery .wrapper-img img")
 
 // gallery_about images list
 const gallery_about_images = {

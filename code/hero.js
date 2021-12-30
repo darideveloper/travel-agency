@@ -1,5 +1,5 @@
 
-var hero_image = document.querySelector(".hero > figure.main-image > img")
+var hero_image = document.querySelector(".hero > .wrapper-img.main-image > img")
 
 // Hero images list
 const hero_images = {

@@ -1,4 +1,4 @@
-var spain_image = document.querySelector (".spain > .images > figure.bg > img")
+var spain_image = document.querySelector (".spain > .images > .wrapper-img.bg > img")
 
 // Spain image list
 const spain_images = {
