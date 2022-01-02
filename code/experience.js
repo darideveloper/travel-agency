@@ -1,5 +1,5 @@
-var experience_next = document.querySelector (".experience > .buttons > .right")
-var experience_back = document.querySelector (".experience > .buttons > .left")
+var experience_next = document.querySelector (".experience > .wrapper-arrow-buttons > .right")
+var experience_back = document.querySelector (".experience > .wrapper-arrow-buttons > .left")
 var experience_last_img = document.querySelector (".experience .gallery .image:nth-child(2) .wrapper-img img")
 var experience_center_img = document.querySelector (".experience .gallery .image:nth-child(3) .wrapper-img img")
 var experience_next_img = document.querySelector (".experience .gallery .image:nth-child(4) .wrapper-img img")

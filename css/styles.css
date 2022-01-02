@@ -105,6 +105,32 @@ p.small {
   display: none !important;
 }
 
+.wrapper-arrow-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  margin: 0 auto;
+}
+.wrapper-arrow-buttons .arrow.botton {
+  width: 40px;
+  height: 40px;
+  border: 2px solid rgba(86, 67, 34, 0.3);
+  border-radius: 50%;
+  margin: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper-arrow-buttons .arrow.botton.right {
+  transform: rotateZ(180deg);
+}
+.wrapper-arrow-buttons .arrow.botton .wrapper-img {
+  width: 60%;
+  height: 60%;
+  opacity: 0.6;
+}
+
 @media screen and (max-width: 1200px) {
   .wrapper-gallery {
     width: 1200px;
@@ -940,31 +966,6 @@ header .icons {
 .experience .wrapper-gallery .gallery .image.extra {
   display: none;
 }
-.experience .buttons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: auto;
-  margin: 0 auto;
-}
-.experience .buttons .arrow {
-  width: 40px;
-  height: 40px;
-  border: 2px solid rgba(86, 67, 34, 0.3);
-  border-radius: 50%;
-  margin: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.experience .buttons .arrow.right {
-  transform: rotateZ(180deg);
-}
-.experience .buttons .arrow .wrapper-img {
-  width: 60%;
-  height: 60%;
-  opacity: 0.6;
-}
 @media screen and (max-width: 1200px) {
   .experience .wrapper-gallery .gallery {
     width: 100%;
@@ -995,6 +996,99 @@ header .icons {
   .experience .buttons {
     display: none;
   }
+}
+
+.wrapper-reviws .animated {
+  transition-duration: 1s;
+}
+.wrapper-reviws .animated.animation {
+  opacity: 0;
+}
+.wrapper-reviws .reviws {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-top: 100px;
+  position: relative;
+}
+.wrapper-reviws .reviws .dots {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.wrapper-reviws .reviws .dots .dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgba(86, 67, 34, 0.6);
+  margin-right: 10px;
+}
+.wrapper-reviws .reviws .wrapper-card {
+  width: 600px;
+  height: 250px;
+  border: 2px solid #564322;
+  border-radius: 15px;
+  padding: 20px;
+  margin-top: 80px;
+  position: relative;
+}
+.wrapper-reviws .reviws .wrapper-card h3 {
+  margin-bottom: 6px;
+}
+.wrapper-reviws .reviws .wrapper-card p {
+  margin: 0;
+}
+.wrapper-reviws .reviws .wrapper-card .wrapper-arrow-buttons {
+  position: absolute;
+  bottom: 0;
+  width: calc(100% - 40px);
+}
+.wrapper-reviws .reviws .bottom-arrow {
+  position: absolute;
+  width: auto;
+  height: 60px;
+  right: 320px;
+  bottom: 140px;
+}
+.wrapper-reviws .reviws .bottom-arrow .wrapper-img {
+  width: auto;
+  height: 100%;
+}
+.wrapper-reviws .reviws .phone {
+  position: relative;
+  text-align: center;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width: 300px;
+  height: 600px;
+}
+.wrapper-reviws .reviws .phone .bg {
+  width: 300px;
+  height: auto;
+  position: absolute;
+  top: 0;
+}
+.wrapper-reviws .reviws .phone .bg .wrapper-img {
+  width: 100%;
+  height: auto;
+}
+.wrapper-reviws .reviws .phone .content {
+  width: 80%;
+  margin-top: 110px;
+}
+.wrapper-reviws .reviws .phone .content .dots {
+  justify-content: center;
+}
+.wrapper-reviws .reviws .phone .content .profile {
+  border-radius: 60%;
+  overflow: hidden;
+  width: 50%;
+  height: auto;
+  margin: 30px auto;
+}
+.wrapper-reviws .reviws .phone .content h4 {
+  margin-bottom: 70px;
 }
 
 /*# sourceMappingURL=styles.css.map */
