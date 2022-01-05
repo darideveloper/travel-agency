@@ -1,0 +1,66 @@
+.wrapper-questions
+    // border: 1px solid red
+    // display: flex
+    // align-items: center
+    // justify-content: center
+
+    .flex
+        display: flex
+        align-items: center
+        justify-content: space-between
+        margin: 0 auto
+
+    .questions
+        
+        .line
+            width: 0
+            border-left: 2px solid $color_d
+
+        
+        .top-lines
+            width: 400px            
+            margin-top: -30px
+
+            .line
+                height: 150px
+
+            .left
+                transform: rotateZ(60deg)
+            
+            .right
+                transform: rotateZ(-60deg)
+
+        .dots
+            width: 750px
+            margin-top: -35px
+
+            .dot
+                border-radius: 50%
+                border: 2px solid $color_d
+                width: 100px
+                height: 100px
+                display: flex
+                align-items: center
+                justify-content: center
+
+        .bottom-lines
+            width: 650px            
+            margin-top: 20px
+            align-items: flex-start
+
+            .left
+                height: 60px
+
+            .right
+                height: 350px
+
+    .wrapper-cta
+        width: 780px
+        margin-top: -270px
+
+        .cta
+            border-radius: 50px
+            background-color: $color_d
+            color: $color_c
+            padding: 15px 35px
+            text-decoration: none
