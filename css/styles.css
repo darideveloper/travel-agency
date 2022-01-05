@@ -1190,6 +1190,7 @@ header .icons {
 .wrapper-questions .wrapper-cta {
   width: 780px;
   margin-top: -270px;
+  position: relative;
 }
 .wrapper-questions .wrapper-cta .cta {
   border-radius: 50px;
@@ -1197,6 +1198,11 @@ header .icons {
   color: #E7E1C1;
   padding: 15px 35px;
   text-decoration: none;
+}
+.wrapper-questions .wrapper-cta .icon {
+  position: absolute;
+  left: 130px;
+  bottom: -24px;
 }
 .wrapper-questions .wrapper-title, .wrapper-questions .arrow {
   display: none;
