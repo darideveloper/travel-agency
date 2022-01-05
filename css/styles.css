@@ -1185,11 +1185,11 @@ header .icons {
   height: 60px;
 }
 .wrapper-questions .questions .bottom-lines .right {
-  height: 350px;
+  height: 200px;
 }
 .wrapper-questions .wrapper-cta {
   width: 780px;
-  margin-top: -270px;
+  margin-top: -120px;
   position: relative;
 }
 .wrapper-questions .wrapper-cta .cta {
@@ -1278,6 +1278,92 @@ header .icons {
     display: block;
     width: 80px;
     margin: 0 auto;
+  }
+}
+
+.wrapper-contac {
+  margin-top: 100px;
+  width: 100%;
+  background-color: #A1C2C3;
+}
+.wrapper-contac .contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.wrapper-contac .contact .wrapper-map {
+  width: 50%;
+}
+.wrapper-contac .contact .wrapper-map iframe {
+  height: 500px;
+  width: 100%;
+}
+.wrapper-contac .contact .wrapper-form {
+  width: 50%;
+}
+.wrapper-contac .contact .wrapper-form h2 {
+  margin-bottom: 60px;
+}
+.wrapper-contac .contact .wrapper-form form {
+  display: flex;
+  flex-direction: column;
+}
+.wrapper-contac .contact .wrapper-form form input {
+  margin: 15px auto;
+  background: none;
+  font-size: 18px;
+  color: #564322;
+}
+.wrapper-contac .contact .wrapper-form form input[type=text], .wrapper-contac .contact .wrapper-form form input[type=number] {
+  width: 350px;
+  border: none;
+  border-bottom: 2px solid #564322;
+}
+.wrapper-contac .contact .wrapper-form form input:focus {
+  outline: none;
+  border-bottom: 3px solid #564322;
+  font-weight: bold;
+}
+.wrapper-contac .contact .wrapper-form form .wrapper-submit {
+  width: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 30px auto;
+  margin-bottom: 0;
+}
+.wrapper-contac .contact .wrapper-form form .wrapper-submit input {
+  margin: 0;
+  border: none;
+  background-color: #E7E1C1;
+  border-radius: 30px;
+  padding: 10px 30px;
+}
+.wrapper-contac .contact .wrapper-form form .wrapper-submit input:focus {
+  outline: none;
+  border: none;
+}
+@media screen and (max-width: 900px) {
+  .wrapper-contac .contact {
+    flex-direction: column-reverse;
+  }
+  .wrapper-contac .contact .wrapper-map {
+    width: 100%;
+  }
+  .wrapper-contac .contact .wrapper-map iframe {
+    height: 40vw;
+  }
+  .wrapper-contac .contact .wrapper-form {
+    width: 100%;
+    padding: 50px 0;
+  }
+}
+@media screen and (max-width: 450px) {
+  .wrapper-contac .contact .wrapper-form form input[type=text], .wrapper-contac .contact .wrapper-form form input[type=number] {
+    width: 80%;
+  }
+  .wrapper-contac .contact .wrapper-form form .wrapper-submit {
+    width: 80%;
   }
 }
 

@@ -1,0 +1,92 @@
+.wrapper-contac
+    margin-top: 100px
+    width: 100%
+    background-color: $color_b
+
+    .contact
+        display: flex
+        align-items: center
+        justify-content: space-between
+
+        .wrapper-map
+            width: 50% 
+
+            iframe
+                height: 500px
+                width: 100%
+
+        .wrapper-form
+            width: 50%
+
+            h2
+                margin-bottom: 60px
+
+            form
+                display: flex
+                flex-direction: column
+
+                input
+                    margin: 15px auto
+                    background: none
+                    font-size: 18px
+                    color: $color_d
+
+                    &[type="text"], &[type="number"]
+                        width: 350px
+                        border: none
+                        border-bottom: 2px solid $color_d
+
+                    &:focus 
+                        outline: none
+                        border-bottom: 3px solid $color_d
+                        font-weight: bold
+
+
+                .wrapper-submit
+                    width: 350px
+                    display: flex
+                    align-items: center
+                    justify-content: flex-end
+                    margin: 30px auto
+                    margin-bottom: 0
+
+                    input
+                        margin: 0
+                        border: none
+                        background-color: $color_c
+                        border-radius: 30px
+                        padding: 10px 30px
+
+                        &:focus 
+                            outline: none
+                            border: none
+
+
+    @media screen and (max-width: 900px)
+        .contact
+            flex-direction: column-reverse
+
+            .wrapper-map
+                width: 100%
+
+                iframe
+                    height: 40vw
+
+            .wrapper-form
+                width: 100%
+                padding: 50px 0
+
+
+    @media screen and (max-width: 450px)
+        .contact
+            .wrapper-form
+                form
+                    input
+                        &[type="text"], &[type="number"]
+                            width: 80%
+
+                    .wrapper-submit
+                        width: 80%
+
+                
+
