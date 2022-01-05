@@ -1,6 +1,7 @@
 // reviws_bg = ""
 var reviws_next = document.querySelector (".reviws .wrapper-arrow-buttons > .right")
 var reviws_back = document.querySelector (".reviws .wrapper-arrow-buttons > .left")
+var card_img = document.querySelector (".reviws .card .profile > img")
 var card_user = document.querySelector (".reviws .card .user")
 var card_title = document.querySelector (".reviws .card .title")
 var card_body = document.querySelector (".reviws .card .body")
@@ -42,6 +43,7 @@ async function update_reviws () {
     let reviw = reviws[reviws_index]
 
     // Fade out
+    card_img.classList.add ("animation")
     card_user.classList.add ("animation")
     phone_img.classList.add ("animation")
     await sleep (0.5)
@@ -50,7 +52,7 @@ async function update_reviws () {
     await sleep (0.5)
     card_body.classList.add ("animation")
     phone_title.classList.add ("animation")
-    await sleep (0.5)
+    await sleep (0.8)
 
     // Update data
     card_user.innerHTML = reviw["user"]
@@ -58,9 +60,11 @@ async function update_reviws () {
     card_body.innerHTML = reviw["body"]
     phone_user.innerHTML = reviw["user"]
     phone_title.innerHTML = reviw["title"]
+    card_img.setAttribute("src", reviw["profile_img"])
     phone_img.setAttribute("src", reviw["profile_img"])
 
     // Fate in
+    card_img.classList.remove ("animation")
     card_user.classList.remove ("animation")
     phone_img.classList.remove ("animation")
     await sleep (0.5)

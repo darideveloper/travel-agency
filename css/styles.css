@@ -993,7 +993,7 @@ header .icons {
   .experience .wrapper-gallery .gallery .image.active p {
     display: none;
   }
-  .experience .buttons {
+  .experience .wrapper-arrow-buttons {
     display: none;
   }
 }
@@ -1003,6 +1003,13 @@ header .icons {
 }
 .wrapper-reviws .animated.animation {
   opacity: 0;
+}
+.wrapper-reviws .profile {
+  border-radius: 60%;
+  overflow: hidden;
+  width: 50%;
+  height: auto;
+  margin: 30px auto;
 }
 .wrapper-reviws .reviws {
   display: flex;
@@ -1032,6 +1039,9 @@ header .icons {
   margin-top: 80px;
   position: relative;
 }
+.wrapper-reviws .reviws .wrapper-card .card.extra {
+  display: none;
+}
 .wrapper-reviws .reviws .wrapper-card h3 {
   margin-bottom: 6px;
 }
@@ -1042,6 +1052,9 @@ header .icons {
   position: absolute;
   bottom: 0;
   width: calc(100% - 40px);
+}
+.wrapper-reviws .reviws .wrapper-card .profile {
+  display: none;
 }
 .wrapper-reviws .reviws .bottom-arrow {
   position: absolute;
@@ -1080,15 +1093,49 @@ header .icons {
 .wrapper-reviws .reviws .phone .content .dots {
   justify-content: center;
 }
-.wrapper-reviws .reviws .phone .content .profile {
-  border-radius: 60%;
-  overflow: hidden;
-  width: 50%;
-  height: auto;
-  margin: 30px auto;
-}
 .wrapper-reviws .reviws .phone .content h4 {
   margin-bottom: 70px;
+}
+@media screen and (max-width: 1100px) {
+  .wrapper-reviws .reviws {
+    justify-content: center;
+  }
+  .wrapper-reviws .reviws .wrapper-card {
+    height: auto;
+  }
+  .wrapper-reviws .reviws .wrapper-card .wrapper-arrow-buttons {
+    position: initial;
+  }
+  .wrapper-reviws .reviws .wrapper-card .profile {
+    display: block;
+    width: 30%;
+  }
+  .wrapper-reviws .reviws .wrapper-card .card .dots {
+    margin-right: -10px;
+    justify-content: center;
+  }
+  .wrapper-reviws .reviws .wrapper-card .card .content {
+    height: 180px;
+  }
+  .wrapper-reviws .reviws .bottom-arrow, .wrapper-reviws .reviws .phone {
+    display: none;
+  }
+}
+@media screen and (max-width: 500px) {
+  .wrapper-reviws .reviws .wrapper-card .card .content {
+    height: 250px;
+  }
+  .wrapper-reviws .reviws .wrapper-card .profile {
+    width: 50%;
+  }
+  .wrapper-reviws .reviws .wrapper-card .wrapper-arrow-buttons {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 360px) {
+  .wrapper-reviws .reviws .wrapper-card .card .content {
+    height: 280px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
