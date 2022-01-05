@@ -64,3 +64,83 @@
             color: $color_c
             padding: 15px 35px
             text-decoration: none
+
+    .wrapper-title, .arrow
+        display: none
+
+    @media screen and (max-width: 950px)
+
+        .questions
+            
+            .top-lines
+                width: 250px            
+                margin-top: -30px
+
+            .dots
+                width: 580px
+                margin-top: -20px
+
+
+            .bottom-lines
+                width: 480px            
+
+        .wrapper-cta
+            width: 612px
+
+    @media screen and (max-width: 700px)
+
+        .questions
+        
+            .top-lines
+                width: 105px            
+                margin-top: -15px
+
+                .line
+                    height: 50px
+
+            .dots
+                width: 238px
+                margin-top: 6px
+
+                .dot
+                    width: 80px
+                    height: 80px
+
+            .bottom-lines
+                width: 162px            
+
+        .wrapper-cta
+            width: 300px
+
+    @media screen and (max-width: 450px)
+
+        margin-top: 80px
+
+        .title
+            display: none
+
+        .questions
+            display: none
+
+        .wrapper-cta
+            width: 100%
+            margin-top: 20px
+
+            .cta
+                background-color: $color_b
+                color: $color_d
+                padding: 25px 45px
+                font-size: 24px
+
+        .wrapper-title
+            display: flex
+            align-items: center
+            justify-content: flex-end
+
+            h3
+                text-align: center
+
+        .arrow
+            display: block
+            width: 80px
+            margin: 0 auto

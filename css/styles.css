@@ -1099,9 +1099,11 @@ header .icons {
 @media screen and (max-width: 1100px) {
   .wrapper-reviws .reviws {
     justify-content: center;
+    margin-top: 0;
   }
   .wrapper-reviws .reviws .wrapper-card {
     height: auto;
+    margin-top: 0;
   }
   .wrapper-reviws .reviws .wrapper-card .wrapper-arrow-buttons {
     position: initial;
@@ -1195,6 +1197,82 @@ header .icons {
   color: #E7E1C1;
   padding: 15px 35px;
   text-decoration: none;
+}
+.wrapper-questions .wrapper-title, .wrapper-questions .arrow {
+  display: none;
+}
+@media screen and (max-width: 950px) {
+  .wrapper-questions .questions .top-lines {
+    width: 250px;
+    margin-top: -30px;
+  }
+  .wrapper-questions .questions .dots {
+    width: 580px;
+    margin-top: -20px;
+  }
+  .wrapper-questions .questions .bottom-lines {
+    width: 480px;
+  }
+  .wrapper-questions .wrapper-cta {
+    width: 612px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .wrapper-questions .questions .top-lines {
+    width: 105px;
+    margin-top: -15px;
+  }
+  .wrapper-questions .questions .top-lines .line {
+    height: 50px;
+  }
+  .wrapper-questions .questions .dots {
+    width: 238px;
+    margin-top: 6px;
+  }
+  .wrapper-questions .questions .dots .dot {
+    width: 80px;
+    height: 80px;
+  }
+  .wrapper-questions .questions .bottom-lines {
+    width: 162px;
+  }
+  .wrapper-questions .wrapper-cta {
+    width: 300px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .wrapper-questions {
+    margin-top: 80px;
+  }
+  .wrapper-questions .title {
+    display: none;
+  }
+  .wrapper-questions .questions {
+    display: none;
+  }
+  .wrapper-questions .wrapper-cta {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .wrapper-questions .wrapper-cta .cta {
+    background-color: #A1C2C3;
+    color: #564322;
+    padding: 25px 45px;
+    font-size: 24px;
+  }
+  .wrapper-questions .wrapper-title {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .wrapper-questions .wrapper-title h3 {
+    text-align: center;
+  }
+  .wrapper-questions .arrow {
+    display: block;
+    width: 80px;
+    margin: 0 auto;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
