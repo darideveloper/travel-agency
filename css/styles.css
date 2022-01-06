@@ -131,6 +131,33 @@ p.small {
   opacity: 0.6;
 }
 
+.arrow-scroll {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 100%;
+  opacity: 0.5;
+}
+.arrow-scroll .wrapper-img {
+  width: 25%;
+  height: 40%;
+  margin: 0 auto;
+}
+
+nav ul {
+  display: flex;
+  padding: 0;
+}
+nav ul li {
+  list-style: none;
+  padding: 0 20px;
+  transition-duration: 0.5s;
+}
+nav ul li:hover {
+  transform: scale(1.2);
+}
+
 @media screen and (max-width: 1200px) {
   .wrapper-gallery {
     width: 1200px;
@@ -179,19 +206,8 @@ header .logo .wrapper-img {
   width: 100%;
   height: 100%;
 }
-header nav ul {
-  display: flex;
-}
-header nav ul li {
-  list-style: none;
-  padding: 0 20px;
-  transition-duration: 0.5s;
-}
-header nav ul li.back {
+header nav li.back {
   display: none;
-}
-header nav ul li:hover {
-  transform: scale(1.2);
 }
 header .tel {
   opacity: 0.5;
@@ -342,18 +358,6 @@ header .icons {
   margin-right: -25px;
   width: 30px;
   height: auto;
-}
-.hero .grid .arrow {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 10px;
-  height: 100%;
-  opacity: 0.5;
-}
-.hero .grid .arrow .wrapper-img {
-  width: 100%;
-  height: 40%;
 }
 @media screen and (max-width: 1250px) {
   .hero .grid {
@@ -1293,6 +1297,7 @@ header .icons {
 }
 .wrapper-contac .contact .wrapper-map {
   width: 50%;
+  margin-bottom: -4px;
 }
 .wrapper-contac .contact .wrapper-map iframe {
   height: 500px;
@@ -1365,6 +1370,21 @@ header .icons {
   .wrapper-contac .contact .wrapper-form form .wrapper-submit {
     width: 80%;
   }
+}
+
+footer {
+  padding: 20px 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 100%;
+}
+footer a {
+  text-decoration: none;
+  color: initial;
+}
+footer .arrow-scroll {
+  transform: rotateZ(180deg);
 }
 
 /*# sourceMappingURL=styles.css.map */
