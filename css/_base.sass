@@ -83,18 +83,6 @@ p
     &.small
         font-size: 16px
 
-.button
-    text-decoration: none
-
-    transition-duration: 0.3s
-
-    &:hover
-        box-shadow: 0px 0px 12px black
-    
-    &:active
-        box-shadow: 0px 0px 30px black
-        font-weight: bold
-
 .hide
     display: none !important
 
@@ -105,7 +93,7 @@ p
     width: auto
     margin: 0 auto
 
-    .arrow.botton
+    .arrow.button
         width: 40px
         height: 40px
         border: 2px solid rgba($color_d, 0.3)
@@ -116,7 +104,8 @@ p
         justify-content: center
 
         &.right
-            transform: rotateZ(180deg)
+            img
+                transform: rotateZ(180deg)
 
         .wrapper-img
             width: 60%

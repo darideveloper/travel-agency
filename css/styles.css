@@ -89,18 +89,6 @@ p.small {
   font-size: 16px;
 }
 
-.button {
-  text-decoration: none;
-  transition-duration: 0.3s;
-}
-.button:hover {
-  box-shadow: 0px 0px 12px black;
-}
-.button:active {
-  box-shadow: 0px 0px 30px black;
-  font-weight: bold;
-}
-
 .hide {
   display: none !important;
 }
@@ -112,7 +100,7 @@ p.small {
   width: auto;
   margin: 0 auto;
 }
-.wrapper-arrow-buttons .arrow.botton {
+.wrapper-arrow-buttons .arrow.button {
   width: 40px;
   height: 40px;
   border: 2px solid rgba(86, 67, 34, 0.3);
@@ -122,10 +110,10 @@ p.small {
   align-items: center;
   justify-content: center;
 }
-.wrapper-arrow-buttons .arrow.botton.right {
+.wrapper-arrow-buttons .arrow.button.right img {
   transform: rotateZ(180deg);
 }
-.wrapper-arrow-buttons .arrow.botton .wrapper-img {
+.wrapper-arrow-buttons .arrow.button .wrapper-img {
   width: 60%;
   height: 60%;
   opacity: 0.6;
@@ -614,6 +602,8 @@ header .icons {
   padding: 6px 0;
   border-bottom-left-radius: 17px;
   border-bottom-right-radius: 17px;
+  border-top: 3px solid #564322;
+  margin-top: -3px;
 }
 @media screen and (max-width: 1250px) {
   .tours .cards {
@@ -1202,6 +1192,7 @@ header .icons {
   color: #E7E1C1;
   padding: 15px 35px;
   text-decoration: none;
+  border: 3px solid #564322;
 }
 .wrapper-questions .wrapper-cta .icon {
   position: absolute;
@@ -1263,12 +1254,6 @@ header .icons {
   .wrapper-questions .wrapper-cta {
     width: 100%;
     margin-top: 20px;
-  }
-  .wrapper-questions .wrapper-cta .cta {
-    background-color: #A1C2C3;
-    color: #564322;
-    padding: 25px 45px;
-    font-size: 24px;
   }
   .wrapper-questions .wrapper-title {
     display: flex;
@@ -1383,7 +1368,7 @@ footer a {
   text-decoration: none;
   color: initial;
 }
-footer .arrow-scroll {
+footer .arrow-scroll img {
   transform: rotateZ(180deg);
 }
 footer nav ul {
@@ -1446,6 +1431,40 @@ footer svg {
   footer nav li {
     padding: 10px 0;
   }
+}
+
+.button {
+  text-decoration: none;
+  transition-duration: 0.3s;
+}
+.button.button-regular:hover {
+  box-shadow: 4px 4px 12px -4px #564322 !important;
+}
+.button.button-regular:active {
+  box-shadow: none !important;
+  font-weight: bold !important;
+}
+.button.button-phantom:hover {
+  background-color: initial !important;
+  color: #564322 !important;
+}
+.button.button-phantom:active {
+  background-color: initial !important;
+  color: #564322 !important;
+  font-weight: bold !important;
+}
+.button.button-get:hover {
+  border-width: 8px !important;
+}
+.button.button-get:active {
+  background-color: #A1C2C3 !important;
+  border: none !important;
+}
+.button.button-resize:hover {
+  transform: scale(1.3) !important;
+}
+.button.button-resize:active {
+  transform: scale(1) !important;
 }
 
 /*# sourceMappingURL=styles.css.map */

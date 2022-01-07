@@ -1,0 +1,48 @@
+.button
+    text-decoration: none
+    transition-duration: 0.3s
+
+    &.button-regular
+
+        &:hover
+            box-shadow: 4px 4px 12px -4px $color_d !important
+        
+        &:active
+            box-shadow: none !important
+            font-weight: bold !important
+
+    
+    &.button-phantom
+
+        &:hover
+            background-color: initial !important
+            color: $color_d !important
+        
+        &:active
+            background-color: initial !important
+            color: $color_d !important
+            font-weight: bold !important
+
+    &.button-get
+
+        &:hover
+            border-width: 8px !important
+        
+        &:active
+            background-color: $color_b !important
+            // color: $color_b !important
+            border: none !important
+
+    &.button-resize
+
+        &:hover
+            transform: scale(1.3) !important
+
+        &:active
+            transform: scale(1) !important
+
+
+
+
+    
+
