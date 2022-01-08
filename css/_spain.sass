@@ -1,6 +1,17 @@
 .spain
     position: relative
 
+    .bg-gradiant
+        background-color: $color_bg_2
+        width: 100vw
+        position: absolute
+        top: -100vh
+        right: 0
+        overflow: hidden
+        filter: blur(10vh)
+        height: 300vh
+        z-index: -1
+
     .images
         width: 100vw
         position: relative
@@ -98,6 +109,7 @@
                 border: 6px solid $color_b
 
     @media screen and (max-width: 1200px)
+
         .images
             .arrow, .details
                 display: none
@@ -133,6 +145,9 @@
                 padding: 15px 70px
 
     @media screen and (max-width: 600px)
+        .bg-gradiant
+            display: none
+            
         .images
             .country
                 width: 80%

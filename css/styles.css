@@ -654,6 +654,17 @@ header .icons {
 .spain {
   position: relative;
 }
+.spain .bg-gradiant {
+  background-color: #ced2d3;
+  width: 100vw;
+  position: absolute;
+  top: -100vh;
+  right: 0;
+  overflow: hidden;
+  filter: blur(10vh);
+  height: 300vh;
+  z-index: -1;
+}
 .spain .images {
   width: 100vw;
   position: relative;
@@ -787,6 +798,9 @@ header .icons {
   }
 }
 @media screen and (max-width: 600px) {
+  .spain .bg-gradiant {
+    display: none;
+  }
   .spain .images .country {
     width: 80%;
   }
