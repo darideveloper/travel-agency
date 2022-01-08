@@ -146,6 +146,15 @@ nav ul li:hover {
   transform: scale(1.2);
 }
 
+.title.border-text h1 {
+  font-size: 160px;
+  color: #e8e1cf;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: #564322;
+  margin: 0;
+  padding: 0;
+}
+
 @media screen and (max-width: 1200px) {
   .wrapper-gallery {
     width: 1200px;
@@ -295,18 +304,10 @@ header .icons {
   display: grid;
   grid-template-columns: 4fr 3fr 0.2fr;
 }
-.hero .grid .title h1 {
-  font-size: 160px;
-  color: #e8e1cf;
-  -webkit-text-stroke-width: 3px;
-  -webkit-text-stroke-color: #564322;
-  margin: 0;
-  padding: 0;
-}
-.hero .grid .title h1 span {
+.hero .grid .title.border-text h1 span {
   margin-left: 10px;
 }
-.hero .grid .title p {
+.hero .grid .title.border-text p {
   margin: 0;
   padding: 0;
   text-align: left;
@@ -1482,6 +1483,19 @@ footer svg {
 }
 .button.button-resize:active {
   transform: scale(1) !important;
+}
+
+.wrapper-not-found {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.wrapper-not-found a {
+  text-decoration: none;
+  color: #564322;
+  font-size: 30px;
 }
 
 /*# sourceMappingURL=styles.css.map */
