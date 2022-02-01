@@ -436,7 +436,7 @@ header .icons {
     top: 80px;
   }
   .hero .grid .title > p {
-    display: none;
+    display: none !important;
   }
 }
 
